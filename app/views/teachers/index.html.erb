@@ -1,0 +1,19 @@
+<h1 class="well"><%= link_to "Gaby Teachers +", new_teacher_path %></h1>
+<div class="container">
+  <% @teachers.each do |teacher| %>
+    <div class="col-md-12">
+      <h1><%= teacher.name %></h1>
+      <hr>
+    </div>
+    <div class="col-md-12">
+      <br>
+      <h3>Availability :</h3>
+      <h4><%= teacher.availability %></h4>
+    </div>
+    <div class="col-md-12">
+      <h3>Hour Price : $<%= teacher.price %></h3>
+      <br>
+      <hr>
+    </div>
+  <% end %>
+</div>

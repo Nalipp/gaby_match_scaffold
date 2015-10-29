@@ -1,0 +1,29 @@
+<%= render 'shared/page_title', title: "Gaby" %>
+<div class="container">
+
+    <div class="col-md-12">
+      <h1><%= @teacher.name %></h1>
+      <hr>
+    </div>
+    <div class="col-md-4">
+      <h3>skills :</h3>
+      <h4> + <%= @teacher.skill_1 %></h4>
+      <h4> + <%= @teacher.skill_2 %></h4>
+      <h4> + <%= @teacher.skill_3 %></h4>
+    </div>
+    <div class="col-md-8">
+      <h3>About me :</h3>
+      <h4><%= @teacher.description %></h4>
+    </div>
+    <div class="col-md-12">
+      <br>
+      <h3>Availability :</h3>
+      <h4><%= @teacher.availability %></h4>
+    </div>
+    <div class="col-md-12">
+      <h3>Hour Price : $<%= @teacher.price %></h3>
+      <br>
+      <hr>
+    </div>
+
+</div>

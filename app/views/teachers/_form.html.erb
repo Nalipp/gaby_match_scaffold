@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="well col-md-8 col-md-offset-2">
+    <%= form_for @teacher do |f| %>
+      <%= f.label :email %>
+      <%= f.text_field :teacher_email %>
+
+      <%= f.label :password %>
+      <%= f.text_field :password %>
+
+      <%= f.label :user_name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :skill %>
+      <%= f.text_field :skill_1 %>
+
+      <%= f.label :skill %>
+      <%= f.text_field :skill_2 %>
+
+      <%= f.label :skill %>
+      <%= f.text_field :skill_3 %>
+
+      <%= f.label :description %>
+      <%= f.text_area :description, rows: 10 %>
+
+      <%= f.label :price %>
+      <%= f.text_field :price %>
+
+      <%= f.label :availability %>
+      <%= f.text_field :availability%>
+
+      <%= f.submit 'Create teacher', class: "btn btn-success" %>
+
+      <% end %>
+    </div>
+  </div>
