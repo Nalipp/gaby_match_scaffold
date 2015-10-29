@@ -4,7 +4,7 @@ Scaffold
 
 Gemfile:
 
-devise
-bootstrap-sass
-carrierwave
-mini_magick
+devise<br>
+bootstrap-sass<br>
+carrierwave<br>
+mini_magick<br>
