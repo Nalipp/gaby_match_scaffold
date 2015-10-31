@@ -1,6 +1,9 @@
 <%= render 'shared/page_title', title: "Edit teacher" %>
 
-<%= render 'form' %>
+<div class="container">
+  <%= link_to teacher_path do %>
+    <h4><i class="glyphicon glyphicon-chevron-left">Back</i></h4>
+  <% end %>
+</div>
 
-<%= link_to 'Show', @teacher %> |
-<%= link_to 'Back', teachers_path %>
+<%= render 'form' %>
