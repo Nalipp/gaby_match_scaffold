@@ -9,6 +9,16 @@
         <% else %>
           <%= link_to image_tag("placeholder.jpg") %>
         <% end %>
+      <div class="container">
+        <div class="thumbs">
+          <%= link_to "" do %>
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+          <% end %>
+          <%= link_to "" do %>
+            <i class="glyphicon glyphicon-thumbs-down"></i>
+          <% end %>
+        </div>
+      </div>
     </div>
     <div class="col-md-9">
       <h3 class="inline-block-left">Availability : </h3> <p class="inline-block-right"><%= teacher.availability %></p>
