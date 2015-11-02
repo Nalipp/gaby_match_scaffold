@@ -9,6 +9,7 @@ class Teacher < ActiveRecord::Base
   validates :price, presence: true, length: {maximum: 15}
   validates :availability, presence: true, length: {minimum: 5, maximum: 100}
   validate  :picture_size
+  default_scope -> {order(updated_at: :desc) }
 
   private
       def picture_size
