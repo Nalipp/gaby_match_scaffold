@@ -1,0 +1,29 @@
+<h1 class="well"><%= link_to "Gaby Teachers +", new_teacher_path %></h1>
+<div class="container">
+  <% @students.each do |student| %>
+    <div class="col-md-12"><hr>
+      <h1><%= link_to student.student_name, student_path(student) %></h1>
+    <div class="col-md-3">
+        <% if student.picture? %>
+        <%= image_tag student.picture.url %>
+        <% else %>
+          <%= link_to image_tag("placeholder.jpg") %>
+        <% end %>
+      <div class="container">
+        <div class="thumbs">
+          <%= link_to "" do %>
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+          <% end %>
+          <%= link_to "" do %>
+            <i class="glyphicon glyphicon-thumbs-down"></i>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <h3 class="inline-block-left">Description : </h3> <h4 class="inline-block-right"><%= student.description %></h4>
+      <h3 class="inline-block-left">email : </h3> <h4 class="inline-block-right"><%= student.email %></h4>
+    </div>
+  </div>
+  <% end %>
+</div>

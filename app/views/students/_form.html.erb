@@ -1,0 +1,24 @@
+<%= render 'shared/errors', obj: @student %>
+
+<div class="row">
+  <div class="well col-md-8 col-md-offset-2">
+    <%= form_for(@student, html: { multipart: true }) do |f| %>
+      <%= f.label :student_name %>
+      <%= f.text_field :student_name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.text_field :password %>
+
+      <%= f.label :description %>
+      <%= f.text_area :description, rows: 10 %>
+
+      <%= f.file_field :picture %>
+
+      <%= f.submit 'Join', class: "btn btn-success" %>
+
+      <% end %>
+    </div>
+  </div>

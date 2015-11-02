@@ -1,5 +1,11 @@
 <%= render 'shared/page_title', title: "Gaby" %>
 
 <div class="container">
-  <h4><%= link_to "Teachers", teachers_path %></h4>
+  <div class="col-md-12 extra-padding">
+    <div class="col-md-6 text-center">
+      <h4><%= link_to "I am a teacher", teachers_path %></h4>
+    </div>
+    <div class="col-md-6 text-center">
+      <h4><%= link_to "I am a student", root_path %></h4>
+  </div>
 </div>
